@@ -1,0 +1,60 @@
+.con{
+    height: calc(100vh - 4rem);
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    
+    backdrop-filter: blur(4px);
+}
+
+.menu{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 0.5rem;
+    transform: translateX(-30rem);
+    transition: ease 300ms;
+    height: 100%;
+    width: 30rem;
+    background-color: white;
+    overflow-y: auto;
+    box-shadow: 0 0.5rem 1rem 0.1rem rgb(0, 0, 0, 0.15);
+}
+
+.notif_card_con{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 0.1rem solid #F5DF4D;
+    cursor: pointer;
+    background-color: rgb(245, 245, 245);
+    user-select: none;
+}
+
+.notif_text{
+    width: 100%;
+    font-size: 0.96rem;
+    padding: 0.2rem 1rem;
+    margin-top: 1rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: rgb(68, 68, 68);
+}
+
+.notif_date{
+    display: flex;
+    direction: rtl;
+    justify-content: flex-end;
+    padding-left: 1rem;
+    width: 100%;
+    font-size: 0.82rem;
+    color: rgb(163, 163, 163);
+    margin-bottom: 0.5rem;
+}

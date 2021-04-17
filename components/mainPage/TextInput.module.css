@@ -1,0 +1,10 @@
+.input{
+    height: 3rem;
+    width: 100%;
+    border-radius: 1rem;
+    border: #D1D1D1 solid 0.15rem;
+    direction: rtl;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    
+}

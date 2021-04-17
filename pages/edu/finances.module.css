@@ -1,0 +1,66 @@
+.con{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    
+}
+
+.f_con{
+    display: flex;
+    align-items: center;
+    width: 94%;
+    height: 3rem;
+    background-color: white;
+    border: 1px solid rgb(45, 194, 0);
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.f_img{
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+
+.f_title{
+    width: calc(100% - 28rem);
+    margin-right: 1rem;
+    font-size: 0.9rem;
+}
+
+.f_sep_dash{
+    width: 0.25rem;
+    height: 100%;
+}
+
+.f_price{
+    width: 9rem;
+    justify-content: center;
+    white-space: nowrap;
+    display: flex;
+    font-size: 0.98rem;
+    align-items: flex-end;
+}
+
+.f_price_tag{
+    font-size: 0.8rem;
+    margin-right: 0.2rem;
+    color: rgb(141, 141, 141);
+}
+
+.f_date{
+    width: 8rem;
+    justify-content: center;
+    white-space: nowrap;
+    display: flex;
+    font-size: 0.92rem;
+}
+
+.f_show_btn{
+    width: 7rem;
+    height: 100%;
+    border-radius: 1rem 0 0 1rem;
+}
