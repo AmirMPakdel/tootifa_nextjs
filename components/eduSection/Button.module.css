@@ -1,0 +1,10 @@
+.con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #35495E;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 1rem;
+}

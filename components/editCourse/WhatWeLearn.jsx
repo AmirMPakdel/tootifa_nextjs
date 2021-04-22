@@ -41,7 +41,7 @@ export default class WhatWeLearn extends Component {
                 }
                 {
                     !this.state.adding?
-                    <div className={styles.add_btn+" amp_btn"} onClick={this.onAdd}>{"اضافه کردن"}</div>:
+                    <div className={styles.add_btn+" amp_btn"} onClick={this.onAdd}>{"افزودن مورد"}</div>:
                     <AddingLine order={this.state.next_order} onCancel={this.onAddCancel} onSubmit={this.onAddSubmit}/>
                 }
             </div>
@@ -70,6 +70,7 @@ class EditableLine extends Component{
     }
 
     onEdit = ()=>{
+        this.input.focus();
         this.setState({
             readOnly:false,
         })
@@ -100,7 +101,7 @@ class EditableLine extends Component{
         return(
             <div className={styles.line_con}>
 
-                <input className={styles.edln_input} value={this.state.text}
+                <input ref={r=>this.input=r} className={styles.edln_input} value={this.state.text}
                 readOnly={this.state.readOnly} onChange={this.onInput}/>
 
                 {

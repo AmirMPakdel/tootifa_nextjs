@@ -3,6 +3,7 @@ import EditabeText from "../../../components/editCourse/EditabeText";
 import EditableImage from "../../../components/editCourse/EditableImage";
 import EditablePrice from "../../../components/editCourse/EditablePrice";
 import EditableTextArea from "../../../components/editCourse/EditableTextArea";
+import EditContents from "../../../components/editCourse/editContents";
 import Requirement from "../../../components/editCourse/Requirement";
 import WhatWeLearn from "../../../components/editCourse/WhatWeLearn";
 import SecTitle from "../../../components/educatorDashboard/SecTitle";
@@ -83,13 +84,15 @@ export default class edit extends Component {
 
                 <div className={styles.line}/>
 
-                <SecTitle title={"مواردی که در این دوره آموزش داده می شود"}/>
+                <SecTitle title={"محتوای دوره"}/>
 
-                <WhatWeLearn data={this.state.what_we_learn} onWhatWeLeanChange={this.onWhatWeLeanChange}/>
+                <EditContents data={content}/>
 
                 <div className={styles.line}/>
 
-                <SecTitle title={"محتوای دوره"}/>
+                <SecTitle title={"مواردی که در این دوره آموزش داده می شود"}/>
+
+                <WhatWeLearn data={this.state.what_we_learn} onWhatWeLeanChange={this.onWhatWeLeanChange}/>
 
                 <div className={styles.line}/>
 
@@ -101,7 +104,8 @@ export default class edit extends Component {
 
                 <SecTitle title={"توضیحات کامل دوره"}/>
 
-                <EditableTextArea value={this.state.new_complete_info} old_value={this.state.complete_info} 
+                <EditableTextArea texteara_className={styles.complete_info_ta} value={this.state.new_complete_info} 
+                old_value={this.state.complete_info} 
                 onChange={(t)=>this.onInput("complete_info", t)} onSubmit={()=>this.onInputSubmit("complete_info")}/>
 
                 <div style={{marginTop:"5rem"}}/>
@@ -148,3 +152,30 @@ const complete_info = `مستقیم بریم سر اصل مطلب، اگر ام�
 
 دوره سوم آموزش فتوشاپ برای چه کسانی مناسب هست؟
 دوره از صفر صفر شروع خواهد شد! باهم نصب و تنظیم می کنیم و دوره شروع می شود. از مقدمات فتوشاپ شروع خواهیم کرد به تمام ابزار ها از مقدماتی تا حرفه ای و حتی فراتر خدمت شرکت کنندگان تدریس خواهد شد. این دوره هیچ محدودیت مطلبی نخواهد داشت ! هیچ تکنیکی در نزد مدرس باقی نمی ماند همه به شرکت کنندگان منتقل میگردد`
+
+const content = [
+    {
+        order:1,
+        title:"مقدمه",
+        sessions:[
+            {
+                id:22,
+                order:1,
+                title:"1مقدمه ای بر فیزیک",
+                type:"video"
+            },
+            {
+                id:23,
+                order:2,
+                title:"2مقدمه ای بر فیزیک",
+                type:"pdf"
+            },
+            {
+                id:24,
+                order:3,
+                title:"3مقدمه ای بر فیزیک",
+                type:"video"
+            },
+        ]
+    }
+]

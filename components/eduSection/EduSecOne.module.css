@@ -1,0 +1,18 @@
+.con{
+    height: calc(100vh - 5rem);
+}
+
+.rect1{
+    position: absolute;
+    left: -44rem;
+    top: -16rem;
+    z-index: 0;
+}
+
+.circ1{
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    top : 10rem;
+    left: calc(50% - 12.5rem)
+}

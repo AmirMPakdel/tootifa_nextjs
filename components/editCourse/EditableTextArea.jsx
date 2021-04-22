@@ -26,10 +26,16 @@ export default class EditableTextArea extends Component {
     }
 
     render(){
+
+        let texteara_addClass = "";
+        if(this.props.texteara_className){
+            texteara_addClass += this.props.texteara_className+" ";
+        }
+
         return(
             <div className={styles.con}>
 
-                <textarea ref={r=>this.input=r} className={styles.input} value={this.props.value} 
+                <textarea ref={r=>this.input=r} className={styles.input+" "+texteara_addClass} value={this.props.value} 
                 readOnly={this.state.readOnly} onChange={(e)=>this.props.onChange(e.target.value)}/>
 
                 {

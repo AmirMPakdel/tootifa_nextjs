@@ -1,0 +1,61 @@
+.con{
+    display: flex;
+    width: 100%;
+    direction: rtl;
+}
+
+.shape1{
+    position: absolute;
+    top: -40vh;
+    left: -5vh;
+    height: 180vh;
+    width: 80vw;
+    min-width: 150vh;
+    min-height: 70vw;
+    user-select: none;
+}
+
+.right_sec{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.right_img{
+    height: 18rem;
+    margin-bottom: 2rem;
+    user-select: none;
+}
+
+.go_register_link a{
+    color: #4FBA6F;
+}
+
+.left_sec{
+    width: 60%;
+    height: calc(100vh - 5rem);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec1{
+    width: 27rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.forgot_link{
+    user-select: none;
+    cursor: pointer;
+    padding-left: 1.5rem;
+}
+
+.register_btn{
+    width: 21rem;
+    margin-top: 1.4rem;
+}

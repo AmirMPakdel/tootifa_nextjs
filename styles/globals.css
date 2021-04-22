@@ -12,6 +12,10 @@
 	transform: scale(0.9);
 }
 
+.register_link:hover{
+	color: #4FBA6F;
+}
+
 .recharts-cartesian-axis-tick text{
 	direction: ltr;
 }
