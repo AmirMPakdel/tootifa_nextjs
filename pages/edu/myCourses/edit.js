@@ -3,7 +3,7 @@ import EditabeText from "../../../components/editCourse/EditabeText";
 import EditableImage from "../../../components/editCourse/EditableImage";
 import EditablePrice from "../../../components/editCourse/EditablePrice";
 import EditableTextArea from "../../../components/editCourse/EditableTextArea";
-import EditContents from "../../../components/editCourse/editContents";
+import EditContents from "../../../components/editCourse/EditContents";
 import Requirement from "../../../components/editCourse/Requirement";
 import WhatWeLearn from "../../../components/editCourse/WhatWeLearn";
 import SecTitle from "../../../components/educatorDashboard/SecTitle";

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Header from "../components/eduSection/header";
+import Header from "../components/eduSection/Header";
 import styles from "./EduSectionLayout.module.css";
 
 export default class EduSectionLayout extends Component {
